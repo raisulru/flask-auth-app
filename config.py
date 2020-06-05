@@ -5,7 +5,7 @@ load_dotenv()
 
 
 class Config(object):
-    SECRET_KEY = os.getenv('SECRET_KEY') or 'you-will-never-guess'
+    JWT_SECRET_KEY = os.getenv('SECRET_KEY') or 'you-will-never-guess'
     BASE_DIR = os.path.dirname(os.path.abspath(__file__))
     broker_url = os.getenv('BROKER_URL')
     result_backend = os.getenv('RESULT_BACKEND')
